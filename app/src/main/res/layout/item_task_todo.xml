@@ -1,0 +1,70 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/note_background"
+    android:padding="10dp"
+    android:layout_margin="8dp">
+
+<!-- Título de la nota -->
+
+    <TextView
+        android:id="@+id/tareaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="Tarea"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+<!-- Contenido de la nota -->
+    <TextView
+        android:id="@+id/descripcionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:text="Descripcion"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tareaTextView"
+        app:layout_goneMarginTop="16dp"/>
+
+
+    <!-- Categoría -->
+    <TextView
+        android:id="@+id/categoriaTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Categoría"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@+id/descripcionTextView"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Fecha -->
+    <TextView
+        android:id="@+id/fechaTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Fecha"
+        android:textSize="14sp"
+        android:textColor="#B89000"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
